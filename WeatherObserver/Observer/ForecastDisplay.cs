@@ -30,6 +30,10 @@ public sealed class ForecastDisplay : IDisplay
         Display();
     }
 
+    /// <summary>
+    /// Displays a forecast message based on the current temperature.
+    /// </summary>
+
     public void Display()
     {
         if(weatherData.Temperature > 80)

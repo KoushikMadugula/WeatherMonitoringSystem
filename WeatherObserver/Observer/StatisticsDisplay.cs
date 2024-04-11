@@ -30,9 +30,13 @@ public sealed class StatisticsDisplay : IDisplay
         Display();
     }
 
+    /// <summary>
+    /// Displays statistics including average, maximum, and minimum temperatures.
+    /// </summary>
+
     public void Display()
     {
-        Console.WriteLine($"Statistics: Average Temperature - {weatherData.Temperature}, Max Temperature - {weatherData.MaxTemperature}, Min Temperature - {weatherData.MinTemperature}");
+        Console.WriteLine($"Statistics: Average Temperature - {weatherData.Temperature}℉, Max Temperature - {weatherData.MaxTemperature}℉, Min Temperature - {weatherData.MinTemperature}℉");
     }
 }
 }
